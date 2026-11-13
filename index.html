@@ -12,8 +12,8 @@
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"SportingGoodsStore","name":"DeporPalma","description":"Distribuidor de Erreà en Baleares. Equipaciones deportivas para clubes, personalización textil y uniformes para empresas.","telephone":"+34606384702","email":"deporpalma@gmail.com","address":{"@type":"PostalAddress","streetAddress":"Carrer Emili Darder, 31","addressLocality":"Palma","postalCode":"07013","addressRegion":"Illes Balears","addressCountry":"ES"},"geo":{"@type":"GeoCoordinates","latitude":39.5773113,"longitude":2.6385641},"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"10:00","closes":"13:30"},{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"16:00","closes":"19:00"}],"brand":{"@type":"Brand","name":"Erreà"},"areaServed":"Illes Balears"}
 </script>
-  <script type="module" crossorigin src="./assets/index-Bt_TyMSK.js"></script>
-  <link rel="stylesheet" crossorigin href="./assets/index-BTltToVu.css">
+  <script type="module" crossorigin src="./assets/index-Dkfu4yet.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/index-CJ40C426.css">
 <style id="dp-pagina-inicial">[data-pagina]:not([data-pagina~="inicio"]){display:none!important}</style></head>
 <body>
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
@@ -35,6 +35,7 @@
       <a href="#clubes" data-nav="clubes">Clubes</a>
       <a href="#empresas" data-nav="empresas">Empresas</a>
       <a href="#contacto" data-nav="contacto">Contacto</a>
+      <a href="#personaliza" data-nav="personaliza" class="nav-cta">Equipa tu club</a>
     </nav>
     <button class="cart-btn" type="button" id="cartBtn" hidden aria-label="Ver tu solicitud"><span class="cart-txt">Solicitud</span> <b id="cartCount">0</b></button>
   </div>
@@ -47,10 +48,10 @@
   <div class="hero-img"><picture><source type="image/webp" srcset="img/hero-equipo-720.webp 720w, img/hero-equipo-1200.webp 1200w, img/hero-equipo-1920.webp 1920w" sizes="100vw"><img src="./img/hero-equipo.jpg" width="1920" height="1280" fetchpriority="high" alt="Equipo con equipaciones Erreà azul marino y amarillo"></picture></div>
   <div class="wrap">
     <h1 id="h-hero">Equipamos colectivos, <em>creamos identidad.</em></h1>
-    <p class="lead">Equipaciones Erreà y personalización para clubes y colectivos de Mallorca.</p>
+    <p class="lead">Equipaciones Erreà personalizadas para clubes y colectivos de Baleares, acompañándote desde el diseño hasta la entrega.</p>
     <div class="ctas">
-      <a class="btn" href="#clubes">Busca tu club</a>
-      <a class="btn btn-light" href="#contacto">Contacto</a>
+      <a class="btn" href="#personaliza">Diseña la equipación de tu club</a>
+      <a class="btn btn-light" href="#clubes">Busca tu club</a>
     </div>
     <div class="hero-errea"><svg class="errea-logo" viewBox="0 0 429 431" role="img" aria-label="Erreà"><use href="#errea-q" width="429" height="431"/></svg><span class="he-txt"><b>Distribuidor exclusivo Erreà</b><small>en Baleares</small></span><span class="hero-anos"><b>20</b><span>años de<br>experiencia</span></span></div>
   </div>
@@ -69,6 +70,22 @@
   </div>
 </section>
 
+<section data-pagina="inicio" class="medida" id="medida" aria-labelledby="h-medida">
+  <div class="wrap medida-in">
+    <div class="medida-txt">
+      <h2 id="h-medida">Cada club, una equipación hecha a su medida</h2>
+      <p>Escudo, colores, nombres, dorsales y patrocinadores: personalizamos cada prenda del club y te acompañamos en cada decisión, de la primera idea a la última entrega de la temporada.</p>
+      <a class="btn" href="#personaliza">Diseña la equipación de tu club</a>
+    </div>
+    <ol class="medida-pasos">
+      <li><b>Nos cuentas</b><span>Cómo es el club, qué prendas necesitáis y para cuándo.</span></li>
+      <li><b>Te proponemos</b><span>Prendas Erreà, diseño y personalización, con presupuesto detallado.</span></li>
+      <li><b>Personalizamos</b><span>Escudos, nombres, dorsales y patrocinadores en cada prenda.</span></li>
+      <li><b>Entregamos</b><span>Por equipos y con reposiciones durante toda la temporada.</span></li>
+    </ol>
+  </div>
+</section>
+
 <section data-pagina="inicio" class="band alt" id="confian" aria-labelledby="h-confian">
   <div class="wrap">
     <div class="head">
@@ -76,6 +93,115 @@
     </div>
     <div class="club-grid" id="confianGrid"></div>
     <a class="btn btn-navy" href="#clubes">Ver todos los clubes</a>
+  </div>
+</section>
+
+<!-- ===== EQUIPA TU CLUB (proyecto a medida) ===== -->
+<section data-pagina="personaliza" class="atelier" id="personaliza" aria-labelledby="h-personaliza">
+  <div class="wrap">
+    <header class="at-head">
+      <h1 id="h-personaliza">La equipación de tu club, a medida</h1>
+      <p>Cuéntanos cómo es tu club en cuatro pasos. Con eso preparamos tu propuesta de prendas, personalización y plazos, y te acompañamos hasta la entrega.</p>
+    </header>
+
+    <div class="at-grid">
+      <form class="at-form" id="pForm" novalidate aria-label="Proyecto de equipación">
+        <ol class="at-pasos" aria-label="Pasos">
+          <li><button type="button" data-ir="1" aria-current="step">Tu club</button></li>
+          <li><button type="button" data-ir="2">Prendas</button></li>
+          <li><button type="button" data-ir="3">Personalización</button></li>
+          <li><button type="button" data-ir="4">Plazo y contacto</button></li>
+        </ol>
+
+        <fieldset class="at-paso" data-paso="1">
+          <legend>¿Qué club vamos a vestir?</legend>
+          <div class="f"><label for="pClub">Nombre del club o colectivo</label><input id="pClub" autocomplete="organization"><span class="err" hidden>Escribe el nombre del club.</span></div>
+          <div class="row2">
+            <div class="f"><label for="pDeporte">Deporte</label>
+              <select id="pDeporte"><option>Fútbol</option><option>Baloncesto</option><option>Balonmano</option><option>Voleibol</option><option>Fútbol sala</option><option>Natación</option><option>Gimnasia</option><option>Otro</option></select></div>
+            <div class="f"><label for="pJugadores">Jugadores, aproximadamente</label><input id="pJugadores" type="number" min="1" max="2000" inputmode="numeric"></div>
+          </div>
+          <div class="f"><span class="f-lbl" id="lCat">Categorías</span>
+            <div class="chips" role="group" aria-labelledby="lCat" data-grupo="categorias">
+              <label><input type="checkbox" value="Escuela"><span>Escuela</span></label>
+              <label><input type="checkbox" value="Base"><span>Base</span></label>
+              <label><input type="checkbox" value="Sénior"><span>Sénior</span></label>
+              <label><input type="checkbox" value="Veteranos"><span>Veteranos</span></label>
+              <label><input type="checkbox" value="Cuerpo técnico"><span>Cuerpo técnico</span></label>
+            </div>
+          </div>
+        </fieldset>
+
+        <fieldset class="at-paso" data-paso="2" hidden>
+          <legend>¿Qué prendas necesitáis?</legend>
+          <div class="chips chips-lg" role="group" aria-label="Prendas" data-grupo="prendas">
+            <label><input type="checkbox" value="Camiseta de juego"><span>Camiseta de juego</span></label>
+            <label><input type="checkbox" value="Pantalón"><span>Pantalón</span></label>
+            <label><input type="checkbox" value="Medias"><span>Medias</span></label>
+            <label><input type="checkbox" value="Chándal"><span>Chándal</span></label>
+            <label><input type="checkbox" value="Chaqueta de paseo"><span>Chaqueta de paseo</span></label>
+            <label><input type="checkbox" value="Sudadera"><span>Sudadera</span></label>
+            <label><input type="checkbox" value="Camiseta de entreno"><span>Camiseta de entreno</span></label>
+            <label><input type="checkbox" value="Polo"><span>Polo</span></label>
+            <label><input type="checkbox" value="Mochila o bolsa"><span>Mochila o bolsa</span></label>
+          </div>
+          <span class="err" id="pPrendasErr" hidden>Elige al menos una prenda.</span>
+        </fieldset>
+
+        <fieldset class="at-paso" data-paso="3" hidden>
+          <legend>¿Cómo la personalizamos?</legend>
+          <div class="chips chips-lg" role="group" aria-label="Personalización" data-grupo="marcaje">
+            <label><input type="checkbox" value="Escudo del club"><span>Escudo del club</span></label>
+            <label><input type="checkbox" value="Nombres"><span>Nombres</span></label>
+            <label><input type="checkbox" value="Dorsales"><span>Dorsales</span></label>
+            <label><input type="checkbox" value="Patrocinadores"><span>Patrocinadores</span></label>
+          </div>
+          <div class="f"><label for="pColores">Colores del club</label><input id="pColores" placeholder="Por ejemplo: rojo y blanco"></div>
+          <div class="f"><span class="f-lbl" id="lDiseno">Diseño</span>
+            <div class="chips" role="radiogroup" aria-labelledby="lDiseno" data-grupo="diseno">
+              <label><input type="radio" name="pDiseno" value="Ya tenemos diseño" checked><span>Ya tenemos diseño</span></label>
+              <label><input type="radio" name="pDiseno" value="Queremos que nos ayudéis a diseñarla"><span>Ayudadnos a diseñarla</span></label>
+            </div>
+          </div>
+        </fieldset>
+
+        <fieldset class="at-paso" data-paso="4" hidden>
+          <legend>¿Para cuándo y cómo te contactamos?</legend>
+          <div class="f"><label for="pPlazo">¿Para cuándo la necesitáis?</label>
+            <select id="pPlazo"><option>Inicio de temporada (agosto–septiembre)</option><option>Lo antes posible</option><option>Para un torneo o evento</option><option>Sin prisa, estamos valorando</option></select></div>
+          <div class="row2">
+            <div class="f"><label for="pNombre">Tu nombre</label><input id="pNombre" autocomplete="name"><span class="err" hidden>Escribe tu nombre.</span></div>
+            <div class="f"><label for="pTel">Teléfono</label><input id="pTel" type="tel" autocomplete="tel" inputmode="tel"><span class="err" hidden>Escribe un teléfono válido.</span></div>
+          </div>
+          <div class="f"><label for="pRol">Tu papel en el club</label>
+            <select id="pRol"><option>Presidencia o junta</option><option>Coordinación</option><option>Entrenador o entrenadora</option><option>Familia o jugador</option></select></div>
+          <div class="f"><label for="pNota">Algo más que debamos saber <small>(opcional)</small></label><textarea id="pNota" rows="3"></textarea></div>
+          <div class="check"><input type="checkbox" id="pOk"><label for="pOk">He leído la <a href="#privacidad" data-legal="privacidad">información sobre protección de datos</a>.</label></div>
+          <span class="err" id="pOkErr" hidden>Marca la casilla para continuar.</span>
+        </fieldset>
+
+        <div class="at-nav">
+          <button type="button" class="btn btn-ghost" id="pAtras" hidden>Atrás</button>
+          <button type="button" class="btn" id="pSig">Siguiente</button>
+          <button type="submit" class="btn" id="pEnviar" hidden><svg aria-hidden="true"><use href="#wa"/></svg>Enviar por WhatsApp</button>
+        </div>
+        <div class="out" id="pOut" hidden role="status"></div>
+      </form>
+
+      <aside class="at-ficha" aria-labelledby="h-ficha">
+        <h2 id="h-ficha">Ficha de tu proyecto</h2>
+        <dl id="pFicha">
+          <div><dt>Club</dt><dd data-f="club">Sin indicar</dd></div>
+          <div><dt>Deporte</dt><dd data-f="deporte">Fútbol</dd></div>
+          <div><dt>Jugadores</dt><dd data-f="jugadores">Sin indicar</dd></div>
+          <div><dt>Categorías</dt><dd data-f="categorias">Sin indicar</dd></div>
+          <div><dt>Prendas</dt><dd data-f="prendas">Sin elegir</dd></div>
+          <div><dt>Personalización</dt><dd data-f="marcaje">Sin elegir</dd></div>
+          <div><dt>Plazo</dt><dd data-f="plazo">Inicio de temporada</dd></div>
+        </dl>
+        <p class="at-nota">Al enviarla, te respondemos personalmente con una propuesta para tu club.</p>
+      </aside>
+    </div>
   </div>
 </section>
 
@@ -127,7 +253,7 @@
       <li><span class="dot" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 4 4 7l2 3 2-1v11h8V9l2 1 2-3-4-3c0 2-1.5 3-4 3S8 6 8 4z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg><i>3</i></span><h3>Marcaje</h3><p>Nombres, dorsales y logos.</p></li>
       <li><span class="dot" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3 7h11v9H3zM14 10h4l3 3v3h-7M7 19a2 2 0 1 0 0-.1M17 19a2 2 0 1 0 0-.1" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg><i>4</i></span><h3>Entrega</h3><p>Y reposiciones durante la temporada.</p></li>
     </ol>
-    <a class="btn" href="#contacto">Equipar mi club</a>
+    <a class="btn" href="#personaliza">Empieza el proyecto de tu club</a>
   </div>
 </section>
 
